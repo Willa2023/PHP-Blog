@@ -1,0 +1,366 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "navigation"
+    "middlebar"
+    "middlebottom"
+    "middlebottom2"
+    "footer";
+    background-color:rgba(127, 255, 170, 0.1);
+    margin:50px 150px 50px 150px;
+}
+
+#navigation {
+    grid-area: navigation;
+    margin-left: -10px;
+}
+
+#middlebar{
+    grid-area: middlebar;
+    margin-left:20px;
+}
+
+#middlebottom{
+    grid-area: middlebottom;
+    margin-top: 20px;
+}
+
+#middlebottom2{
+    grid-area: middlebottom2;
+    margin-top: 50px;
+    margin-left:20px;
+}
+
+#middlebar.typeblock{
+    display: grid;
+    grid-template-areas:
+    "news culture sport lifestyle";
+    color: red;
+}
+
+#typeNews {
+    grid-area: news;
+}
+
+#typeCulture {
+    grid-area: culture;
+}
+
+#typeSport {
+    grid-area: sport;
+}
+
+#typeLifestyle {
+    grid-area: lifestyle;
+}
+
+.eachtype{
+    margin:5px;
+    padding:0 10px 0 0;
+    /* background-image:linear-gradient(180deg, rgba(88, 199, 182, 0.5),rgba(29, 199, 174, 0.05)); */
+    height:500px;
+    background-image: linear-gradient(180deg, rgba(80, 165, 240, 0.5),rgba(247, 224, 51, 0.2));
+    
+    /* border: 1px dashed rgb(224, 217, 150,0.8);
+    border-bottom:none; */
+}
+
+.typeHeader {
+    text-align: center;
+    color:rgba(16, 137, 212, 0.85);
+}
+
+#newsArticle,#cultureArticle,#sportArticle,#lifestyleArticle {
+    color:rgba(109, 35, 120, 0.8);
+    padding:5px 0;
+}
+
+h1.home{
+    color:rgba(87, 166, 215, 0.85);
+}
+
+.article-title, .multiple-list{
+    text-align: left;
+}
+
+.article-title li {
+    padding:0;
+}
+
+input {
+    height:20px;
+}
+
+#titleText, #authorText, #contentText {
+    border:none;
+    background-color: transparent;
+    resize:none;
+    text-align: left;
+}
+
+#titleText {
+    color:rgba(33, 24, 120, 0.85);
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    height:fit-content;
+}
+
+#authorText,.titleborder {
+    /* color:rgba(33, 24, 120, 0.85); */
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+    color:rgba(0, 0, 0, 0.5);
+}
+
+#idText, #createTimeText, #updateTimeText, #info, #commentTime, .authorborder,.contentborder {
+    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+    /* color:rgba(33, 24, 120, 0.5); */
+    color:rgba(0, 0, 0, 0.5);
+}
+
+
+#contentText{
+    /* color:rgba(120, 114, 181, 0.95); */
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    resize:none;
+    text-align: left;
+    min-height:250px;
+    color:rgba(0, 0, 0, 0.8);
+    /* border: 1px dashed rgba(192, 98, 98, 0.67); */
+    
+}
+
+#articleLine {
+    /* color:rgba(33, 24, 120, 0.85); */
+    border: 0.5px dashed rgba(0, 0, 0, 0.3);
+    color:rgba(0, 0, 0, 0.5);
+}
+
+button {
+    height:30px;
+    background-color: rgba(230, 241, 106, 0.6);
+    /* background-color: rgba(87, 166, 215, 0.5); */
+}
+
+
+#orderButton {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+table {
+    margin-top: 10px;
+    width:1200px;
+}
+
+th {
+    padding-left: 10px;
+    /* padding-bottom:20px; */
+    text-align: left;
+    color:gray;
+}
+
+td {
+    padding:10px;
+    border-bottom: 1px dashed #e09696;
+}
+
+td.tdtitle{
+    color:rgba(33, 24, 120, 0.85);
+    /* color:rgba(24, 120, 61, 0.85); */
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Calibri', 'Helvetica', sans-serif;
+}
+
+td.tdauthor{
+    /* color:rgba(33, 24, 120, 0.5); */
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+td.tdtime{
+    /* color:rgba(33, 24, 120, 0.5); */
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+tr {
+    height:50px;
+}
+
+#commentArea {
+    color:rgba(33, 24, 120, 0.85);
+    margin-left: 20px;
+    background-color: #4abd9747;
+}
+
+#commentItem {
+    height:20px;
+    margin-left: 0px;
+    background-color: rgba(74, 189, 151, 0.1);
+    margin-top:50px;
+}
+
+li {
+    color:rgba(33, 24, 120, 0.85);
+}
+
+#commentPrompt {
+    color:rgba(17, 6, 115, 0.5);
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#newcomment {
+    color:rgba(17, 6, 115, 0.85);
+    height:20px;
+    margin-left:20px;
+    background-color: rgba(74, 189, 151, 0.1);
+}
+
+#commentTextarea, #commentButton {
+    margin-left:20px;
+}
+
+#commentTextarea {
+    border:1px solid #ccc;
+    padding:3px;
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    resize: none;
+}
+
+#footer {
+    grid-area: footer;
+    color:rgba(33, 24, 120, 0.85);
+    text-align: right;
+}
+
+#deleteComment {
+    background-color:rgba(128, 128, 128, 0.2);
+    font-size: 10px;
+    float:right;
+    margin-right: 10px;
+    height:18px;
+}
+
+#addArticle {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.titleborder {
+    border:none;
+    border-bottom: 1px dashed black;
+    background-color: transparent;
+    width:400px;
+    height:50px;
+}
+
+.authorborder {
+    border:none;
+    border-bottom: 1px dashed black;
+    background-color: transparent;
+    width:400px;
+    height:30px;
+    
+}
+
+.contentborder {
+    border: 1px solid #ccc;
+    background-color:rgba(128, 128, 128, 0.1);
+    resize: none;
+    padding: 10px;
+    margin-bottom:10px;
+}
+
+
+
+.typeborder {
+    margin-top:30px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    color:rgba(33, 24, 120, 0.5);
+}
+
+.typeSelector{
+    height:30px;
+    /* background-color: rgba(230, 241, 106, 0.6); */
+    background-color: rgba(87, 166, 215, 0.5);
+}
+
+.orderborder, .searchborder {
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    color:rgba(33, 24, 120, 0.5);
+    margin-bottom: 20px;
+}
+
+#noResult{
+    margin-left: 170px;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    color:rgba(33, 24, 120, 0.8);
+    margin-bottom: 20px;
+    /* text-align: center; */
+}
+
+
+.orderSelector, .searchTypeSelector {
+    height:30px;
+    background-color: rgba(87, 166, 215, 0.5);
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.inputButton {
+    height:30px;
+    background-color: rgba(230, 241, 106, 0.6);
+}
+
+.searchInput{
+    /* border: 1px solid #ccc; */
+    /* background-color:rgba(128, 128, 128, 0.1); */
+    background-color: rgba(230, 241, 106, 0.2);
+    height:25px;
+}
+
+#middlebarTop {
+    margin: 20px 0 20px 10px;
+}
+
+.chooseForm, .chooseSearch {
+    margin: 50px 0 50px 10px;
+}
+
+#submitChoose.nowstate {
+    background-color:blue;
+}
+
+#submitSearch.nowstate {
+    background-color:blue;
+}
+
+#searchicon {
+    margin:10px;
+}
+
