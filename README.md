@@ -4,7 +4,7 @@
 
 ### Homepage
 
-![homepage](https://github.com/Willa2023/PHP-Blog/blob/main/img/homepage.png)
+![Homepage](https://github.com/Willa2023/PHP-Blog/blob/main/img/homepage.png)
 
 ### Display Article
 
