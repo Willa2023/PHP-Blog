@@ -4,5 +4,11 @@
 ### Homepage
 ![homepage](https://github.com/Willa2023/PHP-Blog/blob/main/img/homepage.png)
 
-### Display Article Page
+### Display Article
 ![displayArticle](https://github.com/Willa2023/PHP-Blog/blob/main/img/displayArticle.png)
+
+### Create Article
+![displayArticle](https://github.com/Willa2023/PHP-Blog/blob/main/img/createArticle.png)
+
+### View By Type
+![displayArticle](https://github.com/Willa2023/PHP-Blog/blob/main/img/ViewByType.png)
